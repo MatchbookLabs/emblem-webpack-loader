@@ -4,17 +4,18 @@
 
 ## Installation
 
-`npm install emblem-loader`
+`npm install emblem-webpack-loader ember-templates-loader`
 
-## Usage
+## Usage with Ember Webpack Resolver
 
 [Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
 
 ``` javascript
-var template = require("emblem!./file.em");
-
-// And then use it somewhere in your code
-template(data) // Pass object with data
+global.App = Em.Application.create({
+  Resolver: require('ember-webpack-resolver?' + __dirname)({
+    extensions: ['.js', '.em']
+  })
+});
 ```
 
 ### webpack config
@@ -23,8 +24,8 @@ You can also set it up the following in the webpack.config.js file
 module.exports = {
   module: {
     loaders: [
-      { test: /\.em$/, loader: emblem-loader }
-    ]  
+      { test: /\.em$/, loader: "ember-templates!emblem"},
+    ]
   },
   resolve: {
     extensions: ['.em']

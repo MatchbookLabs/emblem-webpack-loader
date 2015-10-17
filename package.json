@@ -1,16 +1,15 @@
 {
-  "name": "emblem-loader",
-  "version": "0.0.4",
+  "name": "emblem-webpack-loader",
+  "version": "0.0.5",
   "description": "Emblem loader for Webpack",
-  "git repository": "https://github.com/yoshdog/emblem-loader",
+  "git repository": "https://github.com/jurrick/emblem-webpack-loader",
   "main": "index.js",
   "dependencies": {
-    "emblem": "~0.3.9",
-    "handlebars": "^2.0.0"
+    "emblem": "~0.6.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yoshdog/emblem-loader.git"
+    "url": "https://github.com/jurrick/emblem-webpack-loader.git"
   },
   "keywords": [
     "em",
@@ -22,6 +21,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Toan Nguyen",
+  "author": "Dmitry Snegirev (https://github.com/Rikkitp)",
+  "contributors": ["Yury Snegirev"],
   "license": "MIT"
 }
