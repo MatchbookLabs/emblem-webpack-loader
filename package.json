@@ -5,7 +5,7 @@
   "git repository": "https://github.com/jurrick/emblem-webpack-loader",
   "main": "index.js",
   "dependencies": {
-    "emblem": "~0.6.1"
+    "emblem": "^0.12.1"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dmitry Snegirev (https://github.com/Rikkitp)",
-  "contributors": ["Yury Snegirev"],
+  "contributors": [
+    "Yury Snegirev"
+  ],
   "license": "MIT"
 }
